@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lot Size Calculator</title>
+    <link rel="stylesheet" href="lot.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lot Size Calculator</h1>
+        <div class="form-group">
+            <label for="pair">Select Pair:</label>
+            <select id="pair">
+                <option value="Volatility 100 index">Volatility 100 index</option>
+                <option value="Volatility 75 index">Volatility 75 index</option>
+                <option value="Volatility 50(1s) index">Volatility 50(1s) index</option>
+                <option value="Volatility 25(1s) index">Volatility 25(1s) index</option>
+                <option value="Volatility 250(1s) index">Volatility 250(1s) index</option>
+                <option value="Jump 25 index">Jump 25 index</option>
+                <option value="Jump 75 index">Jump 75 index</option>
+                <option value="Boom 1000 index">Boom 1000 index</option>
+                <option value="Boom 300 index">Boom 300 index</option>
+                <option value="Crash 300 index">Crash 300 index</option>
+                <option value="Step index">Step index</option>
+                <option value="Volatility 25 index">Volatility 25 index</option>
+                <option value="Volatility 50 index">Volatility 50 index</option>
+                <option value="Volatility 100(1s) index">Volatility 100(1s) index</option>
+                <option value="Volatility 150(1s) index">Volatility 150(1s) index</option>
+                <option value="Volatility 10(1s) index">Volatility 10(1s) index</option>
+                <option value="Jump 10 index">Jump 10 index</option>
+                <option value="Jump 50 index">Jump 50 index</option>
+                <option value="Crash 1000 index">Crash 1000 index</option>
+                <option value="Crash 500 index">Crash 500 index</option>
+                <option value="Volatility 10 index">Volatility 10 index</option>
+                <option value="Volatility 75(1s) index">Volatility 75(1s) index</option>
+                <option value="Jump 100 index">Jump 100 index</option>
+                <option value="Boom 500 index">Boom 500 index</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="entryPrice">Entry Price:</label>
+            <input type="number" id="entryPrice" placeholder="Enter entry price">
+        </div>
+        <div class="form-group">
+            <label for="stopLoss">Stop Loss:</label>
+            <input type="number" id="stopLoss" placeholder="Enter stop loss">
+        </div>
+        <div class="form-group">
+            <label for="accountBalance">Account Balance:</label>
+            <input type="number" id="accountBalance" placeholder="Enter account balance">
+        </div>
+        <div class="form-group">
+            <label for="percentageRisk">Percentage Risk:</label>
+            <input type="number" id="percentageRisk" placeholder="Enter percentage risk">
+        </div>
+        <button id="calculate">Calculate</button>
+        <button id="clear">Clear</button>
+        <div id="lotSize" class="result"></div>
+        <div id="risk" class="result"></div>
+        <div id="positions" class="result"></div> <!-- Added element for displaying positions -->
+    </div>
+    <script src="lot.js"></script>
+</body>
+</html>
